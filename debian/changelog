@@ -1,4 +1,4 @@
-linux-qcom (0.1.0-1) UNRELEASED; urgency=medium
+linux-qcom (6.16.0-1) UNRELEASED; urgency=medium
 
   * Add initial Debian packaging support
 
