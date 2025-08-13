@@ -1,0 +1,25 @@
+From f9ce874af21c8a59b3ab4597f76a07e6bf5fbf8b Mon Sep 17 00:00:00 2001
+From: Xilin Wu <sophon@radxa.com>
+Date: Mon, 9 Jun 2025 10:44:53 +0800
+Subject: [PATCH 20/49] scsi: ufs: qcom: temporarily force to rate A
+
+---
+ drivers/ufs/host/ufs-qcom.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/drivers/ufs/host/ufs-qcom.c b/src/drivers/ufs/host/ufs-qcom.c
+index 18a978452001..632f54d8e785 100644
+--- a/src/drivers/ufs/host/ufs-qcom.c
++++ b/src/drivers/ufs/host/ufs-qcom.c
+@@ -501,6 +501,8 @@ static int ufs_qcom_power_up_sequence(struct ufs_hba *hba)
+ 			host_params->hs_rate = PA_HS_MODE_B;
+ 	}
+ 
++	host_params->hs_rate = PA_HS_MODE_A;
++
+ 	mode = host_params->hs_rate == PA_HS_MODE_B ? PHY_MODE_UFS_HS_B : PHY_MODE_UFS_HS_A;
+ 
+ 	/* Reset UFS Host Controller and PHY */
+-- 
+2.50.1
+
