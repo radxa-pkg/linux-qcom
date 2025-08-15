@@ -1,0 +1,111 @@
+From 6aa992d8d13f64a1b14dd41b52dacfd255292439 Mon Sep 17 00:00:00 2001
+From: Nascs Fang <nascs@radxa.com>
+Date: Thu, 14 Aug 2025 20:16:35 +0800
+Subject: [PATCH] arm64: dts: qcom: qcs6490-dragon-q6a: enable eMMC
+
+Signed-off-by: Nascs Fang <nascs@radxa.com>
+---
+ .../dts/qcom/qcs6490-radxa-dragon-q6a.dts     | 80 +++++++++++++++++++
+ 1 file changed, 80 insertions(+)
+
+diff --git a/src/arch/arm64/boot/dts/qcom/qcs6490-radxa-dragon-q6a.dts b/src/arch/arm64/boot/dts/qcom/qcs6490-radxa-dragon-q6a.dts
+index c37eacbdfde7..39e78d9aafeb 100644
+--- a/src/arch/arm64/boot/dts/qcom/qcs6490-radxa-dragon-q6a.dts
++++ b/src/arch/arm64/boot/dts/qcom/qcs6490-radxa-dragon-q6a.dts
+@@ -1357,6 +1357,35 @@ &sdc2_data {
+ 	drive-strength = <10>;
+ };
+ 
++/* eMMC */
++&sdhc_1 {
++	status = "okay";
++	pinctrl-names = "default", "sleep";
++	pinctrl-0 = <&sdc1_on>;
++	pinctrl-1 = <&sdc1_off>;
++	vmmc-supply = <&vreg_l7b_2p96>;
++	vqmmc-supply = <&vreg_l19b_1p8>;
++};
++
++&sdc1_clk {
++	bias-disable;
++	drive-strength = <16>;
++};
++
++&sdc1_cmd {
++	bias-pull-up;
++	drive-strength = <10>;
++};
++
++&sdc1_data {
++	bias-pull-up;
++	drive-strength = <10>;
++};
++
++&sdc1_rclk {
++	bias-pull-down;
++};
++
+ &tlmm {
+ 
+ 	gpio-line-names =
+@@ -1509,6 +1538,57 @@ user_led: user-led-state {
+ 		function = "gpio";
+ 		bias-pull-up;
+ 	};
++
++	sdc1_on: sdc1-on-state {
++		clk-pins {
++			pins = "sdc1_clk";
++			bias-disable;
++			drive-strength = <16>;
++		};
++
++		cmd-pins {
++			pins = "sdc1_cmd";
++			bias-pull-up;
++			drive-strength = <16>;
++		};
++
++		data-pins {
++			pins = "sdc1_data";
++			bias-pull-up;
++			drive-strength = <16>;
++		};
++
++		rclk-pins {
++			pins = "sdc1_rclk";
++			bias-pull-down;
++		};
++	};
++
++
++	sdc1_off: sdc1-off-state {
++		clk-pins {
++			pins = "sdc1_clk";
++			bias-disable;
++			drive-strength = <2>;
++		};
++
++		cmd-pins {
++			pins = "sdc1_cmd";
++			bias-pull-up;
++			drive-strength = <2>;
++		};
++
++		data-pins {
++			pins = "sdc1_data";
++			bias-pull-up;
++			drive-strength = <2>;
++		};
++
++		rclk-pins {
++			pins = "sdc1_rclk";
++			bias-pull-down;
++		};
++	};
+ };
+ 
+ &qspi_clk {
+-- 
+2.50.1
+
