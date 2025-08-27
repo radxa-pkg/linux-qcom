@@ -27,7 +27,6 @@ linux/0026-soc-qcom-qcom_stats-Add-support-to-read-DDR-statisti.patch
 linux/0027-soc-qcom-qcom_stats-Add-QMP-support-for-syncing-ddr-.patch
 linux/0028-arm64-dts-qcom-sc7280-Add-support-for-two-additional.patch
 linux/0029-configs-Add-qcom_module_defconfig.patch
-linux/0030-Add-in-tree-aic8800-wlan-driver.patch
 linux/0031-spi-spi-qcom-qspi-Add-support-for-polling.patch
 linux/0032-drm-panel-Add-support-for-Orise-Tech-OTA7290B-DSI-Pa.patch
 linux/0033-arm64-dts-qcom-sc7280-Add-cci-aliases.patch
