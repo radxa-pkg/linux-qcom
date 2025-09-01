@@ -47,3 +47,4 @@ linux/0047-arm64-dts-qcom-qcs6490-radxa-dragon-q6a-Add-an-overl.patch
 linux/0048-arm64-dts-qcom-qcs6490-dragon-q6a-add-gpio-label.patch
 linux/0049-drivers-gpu-drm-fix-4K-30-fps.patch
 linux/0050-arm64-dts-qcom-qcs6490-radxa-dragon-q6a-Enable-eMMC.patch
+linux/0051-feat-Radxa-custom-kernel-config.patch
