@@ -1,5 +1,18 @@
-linux-qcom (6.16.0-1) UNRELEASED; urgency=medium
+linux-qcom (6.16.4-1) unstable; urgency=medium
 
+  [ "Radxa Computer Co., Ltd" ]
   * Add initial Debian packaging support
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+  [ Guoguo ]
+  * feat: add dragon q6a patches
+  * fix: remove radxa-overlays-dkms dependency
+  * feat: enable eMMC support for qcs6490-dragon-q6a
+  * fix: update KERNEL_DEFCONFIG to include qcom_module_defconfig
+  * fix: remove in-tree aic8800 wlan driver
+  * fix: use ZSTD to compress kernel module instead of XZ
+
+  [ ZHANG Yuntian ]
+  * fix: restore config overwritten by template
+  * chore: update to 6.16.4
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 02 Sep 2025 11:50:08 +0000
