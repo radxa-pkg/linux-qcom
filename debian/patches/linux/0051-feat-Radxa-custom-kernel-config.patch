@@ -1,24 +1,28 @@
-From f33c2bd18107a641eb940285d0acfaa5ca7e8b96 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: HE Zhengyu <hezhengyu@radxa.com>
 Date: Tue, 2 Sep 2025 11:31:44 +0800
 Subject: [PATCH] feat: Radxa custom kernel config
 
 Signed-off-by: HE Zhengyu <hezhengyu@radxa.com>
 ---
- arch/arm64/configs/radxa_custom.config | 4 ++++
- 1 file changed, 4 insertions(+)
+ arch/arm64/configs/radxa_custom.config | 8 ++++++++
+ 1 file changed, 8 insertions(+)
  create mode 100644 arch/arm64/configs/radxa_custom.config
 
 diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
 new file mode 100644
-index 000000000000..9d0509d8dd3d
+index 000000000000..4e8c56c4c5cd
 --- /dev/null
 +++ b/src/arch/arm64/configs/radxa_custom.config
-@@ -0,0 +1,4 @@
+@@ -0,0 +1,8 @@
 +# Kernel modules build by portage and XZ compressed fail to load with latest kmod tools.
 +# DKMS: https://bugs.gentoo.org/920837
 +CONFIG_MODULE_COMPRESS_XZ=n
 +CONFIG_MODULE_COMPRESS_ZSTD=y
++
++# fix: WCD Playback: codec dai not found
++CONFIG_SOUND=y
++CONFIG_SND=y
 -- 
-2.51.0
+2.50.1
 
