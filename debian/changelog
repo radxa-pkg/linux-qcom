@@ -1,3 +1,13 @@
+linux-qcom (6.16.7-1) unstable; urgency=medium
+
+  [ Guoguo ]
+  * fix: add patches to fix sound issue
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 19 Sep 2025 08:22:03 +0000
+
 linux-qcom (6.16.4-1) unstable; urgency=medium
 
   [ "Radxa Computer Co., Ltd" ]
