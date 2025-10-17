@@ -1,4 +1,4 @@
-linux-qcom (6.17.1-1) UNRELEASED; urgency=medium
+linux-qcom (6.17.1-1) unstable; urgency=medium
 
   [ Guoguo ]
   * feat: change kernel source repo and update to 6.17.1
@@ -6,7 +6,7 @@ linux-qcom (6.17.1-1) UNRELEASED; urgency=medium
   [ ZHANG Yuntian ]
   * fix: provide Qualcomm kernel packages alias
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 17 Oct 2025 08:01:32 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 17 Oct 2025 08:19:16 +0000
 
 linux-qcom (6.16.7-1) unstable; urgency=medium
 
