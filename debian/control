@@ -22,7 +22,8 @@ Package: linux-image-radxa-dragon-q6a
 Architecture: all
 Section: kernel
 Priority: optional
-Provides: linux-image
+Provides: linux-image,
+          linux-image-qcom
 Depends: linux-image-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux meta-package for Radxa Dragon Q6A
@@ -32,7 +33,8 @@ Package: linux-headers-radxa-dragon-q6a
 Architecture: all
 Section: kernel
 Priority: optional
-Provides: linux-headers
+Provides: linux-headers,
+          linux-headers-qcom
 Depends: linux-headers-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux headers meta-package for Radxa Dragon Q6A
@@ -42,7 +44,8 @@ Package: linux-libc-dev-radxa-dragon-q6a
 Architecture: all
 Section: kernel
 Priority: optional
-Provides: linux-libc-dev
+Provides: linux-libc-dev,
+          linux-libc-dev-qcom
 Depends: linux-libc-dev-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa Dragon Q6A
