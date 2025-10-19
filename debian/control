@@ -24,7 +24,8 @@ Section: kernel
 Priority: optional
 Provides: linux-image,
           linux-image-qcom
-Depends: linux-image-${binary:Version}-qcom,
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux meta-package for Radxa Dragon Q6A
  This is the meta-package for Linux kernel.
