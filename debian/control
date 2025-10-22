@@ -23,7 +23,7 @@ Architecture: all
 Section: kernel
 Priority: optional
 Provides: linux-image,
-          linux-image-qcom
+          linux-image-qcom (= 1:0.0.1-1)
 Depends: radxa-overlays-dkms,
          linux-image-${binary:Version}-qcom,
          ${misc:Depends},
@@ -35,7 +35,7 @@ Architecture: all
 Section: kernel
 Priority: optional
 Provides: linux-headers,
-          linux-headers-qcom
+          linux-headers-qcom (= 1:0.0.1-1)
 Depends: linux-headers-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux headers meta-package for Radxa Dragon Q6A
@@ -46,7 +46,7 @@ Architecture: all
 Section: kernel
 Priority: optional
 Provides: linux-libc-dev,
-          linux-libc-dev-qcom
+          linux-libc-dev-qcom (= 1:0.0.1-1)
 Depends: linux-libc-dev-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa Dragon Q6A
