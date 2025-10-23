@@ -1,3 +1,14 @@
+linux-qcom (6.17.1-2) unstable; urgency=medium
+
+  [ HE Zhengyu ]
+  * fix: add radxa-overlays-dkms dependency
+  * fix: add versioned provides for linux-qcom
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 23 Oct 2025 13:33:02 +0000
+
 linux-qcom (6.17.1-1) unstable; urgency=medium
 
   [ Guoguo ]
