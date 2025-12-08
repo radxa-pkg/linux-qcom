@@ -19,6 +19,8 @@ KMAKE ?= $(CUSTOM_ENV_DEFINITIONS) $(MAKE) -C "$(SRC-KERNEL)" -j$(shell nproc) \
 			KERNELRELEASE=$(shell dpkg-parsechangelog -S Version)-$(KERNEL_FORK) \
 			KDEB_PKGVERSION=$(shell dpkg-parsechangelog -S Version)
 
+post_build_dep: arm64_crossbuild_dep
+
 #
 # Build
 #
