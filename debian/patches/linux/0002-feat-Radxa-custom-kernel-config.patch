@@ -5,8 +5,8 @@ Subject: [PATCH] feat: Radxa custom kernel config
 
 Signed-off-by: HE Zhengyu <hezhengyu@radxa.com>
 ---
- arch/arm64/configs/radxa_custom.config | 4 ++++
- 1 file changed, 4 insertions(+)
+ arch/arm64/configs/radxa_custom.config | 7 ++++
+ 1 file changed, 7 insertions(+)
  create mode 100644 arch/arm64/configs/radxa_custom.config
 
 diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
@@ -14,11 +14,14 @@ new file mode 100644
 index 000000000000..4e8c56c4c5cd
 --- /dev/null
 +++ b/src/arch/arm64/configs/radxa_custom.config
-@@ -0,0 +1,4 @@
+@@ -0,0 +1,7 @@
 +# Kernel modules build by portage and XZ compressed fail to load with latest kmod tools.
 +# DKMS: https://bugs.gentoo.org/920837
 +CONFIG_MODULE_COMPRESS_XZ=n
 +CONFIG_MODULE_COMPRESS_ZSTD=y
++
++# Disable CONFIG_EFI_ZBOOT to support U-Boot stdboot with overlay
++CONFIG_EFI_ZBOOT=n
 -- 
 2.50.1
 
