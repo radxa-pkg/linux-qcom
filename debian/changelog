@@ -1,3 +1,19 @@
+linux-qcom (6.17.1-5) unstable; urgency=medium
+
+  [ CodeChenL ]
+  * Add files via upload
+
+  [ Jiali Chen ]
+  * fix: replace qcom_module_defconfig with qcom_module.config
+  * fix: disable CONFIG_EFI_ZBOOT
+  * fix: disable CONFIG_ARCH_ROCKCHIP
+  * chore: update submodules
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 29 Dec 2025 09:26:15 +0000
+
 linux-qcom (6.17.1-4) unstable; urgency=medium
 
   [ github-actions[bot] ]
