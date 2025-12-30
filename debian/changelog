@@ -1,3 +1,10 @@
+linux-qcom (6.17.1-6) unstable; urgency=medium
+
+  [ Jiali Chen ]
+  * feat: add radxa-zero and radxa-zero-2pro support
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 30 Dec 2025 07:28:06 +0000
+
 linux-qcom (6.17.1-5) unstable; urgency=medium
 
   [ CodeChenL ]
