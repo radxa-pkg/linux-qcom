@@ -51,3 +51,71 @@ Depends: linux-libc-dev-${binary:Version}-qcom,
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa Dragon Q6A
  This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-zero-2pro
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image,
+          linux-image-qcom (= 1:0.0.1-1)
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa ZERO 2 PRO
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-zero-2pro
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers,
+          linux-headers-qcom (= 1:0.0.1-1)
+Depends: linux-headers-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa ZERO 2 PRO
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-zero-2pro
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev,
+          linux-libc-dev-qcom (= 1:0.0.1-1)
+Depends: linux-libc-dev-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa ZERO 2 PRO
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-zero
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image,
+          linux-image-qcom (= 1:0.0.1-1)
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa ZERO
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-zero
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers,
+          linux-headers-qcom (= 1:0.0.1-1)
+Depends: linux-headers-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa ZERO
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-zero
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev,
+          linux-libc-dev-qcom (= 1:0.0.1-1)
+Depends: linux-libc-dev-${binary:Version}-qcom,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa ZERO
+ This is the meta-package for Linux libc-dev.
