@@ -1,4 +1,4 @@
 [submodule "src"]
 	path = src
 	url = https://github.com/radxa/kernel.git
-	branch = linux-6.17.1
+	branch = linux-6.18.2
