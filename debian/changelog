@@ -1,3 +1,10 @@
+linux-qcom (6.18.2-1) UNRELEASED; urgency=medium
+
+  [ Nascs Fang ]
+  * chore: update to 6.18.2
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 20 Jan 2026 11:00:17 +0800
+
 linux-qcom (6.17.1-6) unstable; urgency=medium
 
   [ Jiali Chen ]
