@@ -1,9 +1,12 @@
-linux-qcom (6.18.2-1) UNRELEASED; urgency=medium
+linux-qcom (6.18.2-1) unstable; urgency=medium
 
   [ Nascs Fang ]
   * chore: update to 6.18.2
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 20 Jan 2026 11:00:17 +0800
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 20 Jan 2026 03:56:51 +0000
 
 linux-qcom (6.17.1-6) unstable; urgency=medium
 
