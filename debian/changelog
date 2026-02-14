@@ -1,3 +1,13 @@
+linux-qcom (6.18.2-3) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: remove debug options
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sat, 14 Feb 2026 03:34:39 +0000
+
 linux-qcom (6.18.2-2) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
