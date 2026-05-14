@@ -1,14 +1,18 @@
-linux-qcom (7.0.2-1) UNRELEASED; urgency=medium
+linux-qcom (7.0.2-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
   * feat: add linux-image-radxa-dragon-midstream
   * chore: update to 7.0.2
+  * Add new platform configurations to pkg.conf.template
 
   [ dependabot[bot] ]
   * chore(deps): bump dependabot/fetch-metadata from 2 to 3
   * chore(deps): bump softprops/action-gh-release from 2 to 3
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 07 May 2026 03:04:20 +0000
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 14 May 2026 09:45:02 +0000
 
 linux-qcom (6.18.2-4) unstable; urgency=medium
 
