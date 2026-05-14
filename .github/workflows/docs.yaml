@@ -46,12 +46,13 @@ jobs:
     - name: "Setup Pages"
       uses: "actions/configure-pages@v6"
     - name: "Upload artifact"
-      uses: "actions/upload-pages-artifact@v4"
+      uses: "actions/upload-pages-artifact@v5"
       with:
         path: "./book/html"
     - if: "github.event_name != 'pull_request'"
       name: "Deploy to GitHub Pages"
       uses: "actions/deploy-pages@v5"
+    timeout-minutes: 30
 name: "Deploy documentation"
 "on":
   merge_group: {}

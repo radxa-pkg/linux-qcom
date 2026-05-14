@@ -1,0 +1,28 @@
+jobs:
+  rebase:
+    permissions: {}
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: "Secret tests"
+      uses: "actions/github-script@v9"
+      with:
+        script: |
+          const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              head: "dependabot/*"
+          });
+          for (const pr of prs) {
+              await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: pr.number,
+                  body: "@dependabot rebase"
+              });
+          }
+    timeout-minutes: 10
+name: "Rebase open dependabot PRs"
+"on":
+  workflow_dispatch: {}
+permissions: {}
