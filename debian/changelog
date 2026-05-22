@@ -1,3 +1,13 @@
+linux-qcom (7.0.2-2) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update pkg.conf.template
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 22 May 2026 02:53:52 +0000
+
 linux-qcom (7.0.2-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
