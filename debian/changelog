@@ -1,9 +1,9 @@
-linux-qcom (7.0.11-1) UNRELEASED; urgency=medium
+linux-qcom (7.0.11-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
   * chore: update to 7.0.11
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 05 Jun 2026 03:34:33 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 05 Jun 2026 03:48:46 +0000
 
 linux-qcom (7.0.2-2) unstable; urgency=medium
 
