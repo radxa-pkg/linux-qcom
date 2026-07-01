@@ -47,7 +47,7 @@ Section: kernel
 Priority: optional
 Provides: linux-libc-dev,
           linux-libc-dev-qcom (= 1:0.0.1-1)
-Depends: linux-libc-dev-${binary:Version}-qcom,
+Depends: linux-libc-dev (= ${binary:Version}),
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa Dragon Q6A
  This is the meta-package for Linux libc-dev.
@@ -81,7 +81,7 @@ Section: kernel
 Priority: optional
 Provides: linux-libc-dev,
           linux-libc-dev-qcom (= 1:0.0.1-1)
-Depends: linux-libc-dev-${binary:Version}-qcom,
+Depends: linux-libc-dev (= ${binary:Version}),
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa ZERO 2 PRO
  This is the meta-package for Linux libc-dev.
@@ -115,7 +115,7 @@ Section: kernel
 Priority: optional
 Provides: linux-libc-dev,
           linux-libc-dev-qcom (= 1:0.0.1-1)
-Depends: linux-libc-dev-${binary:Version}-qcom,
+Depends: linux-libc-dev (= ${binary:Version}),
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa ZERO
  This is the meta-package for Linux libc-dev.
@@ -149,7 +149,7 @@ Section: kernel
 Priority: optional
 Provides: linux-libc-dev,
           linux-libc-dev-qcom (= 1:0.0.1-1)
-Depends: linux-libc-dev-${binary:Version}-qcom,
+Depends: linux-libc-dev (= ${binary:Version}),
          ${misc:Depends},
 Description: Radxa Linux libc-dev meta-package for Radxa Dragon midstream
  This is the meta-package for Linux libc-dev.
