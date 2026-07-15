@@ -1,3 +1,13 @@
+linux-qcom (7.0.11-3) unstable; urgency=medium
+
+  [ Chongbiao Chen ]
+  * fix: linux-libc-dev meta-package depends on wrong package name
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 15 Jul 2026 11:05:34 +0000
+
 linux-qcom (7.0.11-2) unstable; urgency=medium
 
   [ github-actions[bot] ]
