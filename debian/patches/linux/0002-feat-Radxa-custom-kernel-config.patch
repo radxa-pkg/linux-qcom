@@ -5,8 +5,8 @@ Subject: [PATCH] feat: Radxa custom kernel config
 
 Signed-off-by: HE Zhengyu <hezhengyu@radxa.com>
 ---
- arch/arm64/configs/radxa_custom.config | 14 ++++
- 1 file changed, 14 insertions(+)
+ arch/arm64/configs/radxa_custom.config | 34 ++++
+ 1 file changed, 34 insertions(+)
  create mode 100644 arch/arm64/configs/radxa_custom.config
 
 diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
@@ -14,7 +14,7 @@ new file mode 100644
 index 000000000000..4e8c56c4c5cd
 --- /dev/null
 +++ b/src/arch/arm64/configs/radxa_custom.config
-@@ -0,0 +1,14 @@
+@@ -0,0 +1,34 @@
 +# Kernel modules build by portage and XZ compressed fail to load with latest kmod tools.
 +# DKMS: https://bugs.gentoo.org/920837
 +CONFIG_MODULE_COMPRESS_XZ=n
@@ -29,6 +29,27 @@ index 000000000000..4e8c56c4c5cd
 +CONFIG_BOOTTIME_TRACING=y
 +CONFIG_FUNCTION_TRACER=y
 +CONFIG_DYNAMIC_FTRACE=y
++
++# Enable CONFIG_QCOM_PMIC_PDCHARGER_ULOG to support the pmic_pdcharger_ulog driver
++CONFIG_QCOM_PMIC_PDCHARGER_ULOG=m
++
++# Built-in Platform Glue Driver
++CONFIG_USB_DWC3_PCI=y
++CONFIG_USB_DWC3_HAPS=y
++CONFIG_USB_DWC3_OF_SIMPLE=y
++CONFIG_USB_DWC3_QCOM=y
++CONFIG_USB_DWC3_GENERIC_PLAT=y
++
++# Built-in PHY Drivers
++CONFIG_PHY_QCOM_EDP=y
++CONFIG_PHY_QCOM_QMP=y
++CONFIG_PHY_QCOM_QMP_COMBO=y
++CONFIG_PHY_QCOM_QMP_PCIE=y
++CONFIG_PHY_QCOM_QMP_UFS=y
++CONFIG_PHY_QCOM_QMP_USB=y
++CONFIG_PHY_QCOM_EUSB2_REPEATER=y
++CONFIG_PHY_QCOM_USB_SNPS_FEMTO_V2=y
+
 -- 
 2.50.1
 
