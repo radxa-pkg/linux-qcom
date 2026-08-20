@@ -1,3 +1,13 @@
+linux-qcom (7.0.11-5) unstable; urgency=medium
+
+  [ Stephen Chen ]
+  * fix: built-in QCOM drivers
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 20 Aug 2026 03:27:53 +0000
+
 linux-qcom (7.0.11-4) unstable; urgency=medium
 
   [ github-actions[bot] ]
