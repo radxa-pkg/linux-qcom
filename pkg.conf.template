@@ -5,6 +5,8 @@
       "s905y2-trixie-test",
       "a311d-trixie",
       "a311d-trixie-test",
+      "rk3328-trixie",
+      "rk3328-trixie-test",
       "qcs6490-noble",
       "qcs6490-noble-test",
       "sc8280xp-noble",
