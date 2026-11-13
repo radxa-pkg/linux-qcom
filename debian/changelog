@@ -1,3 +1,10 @@
+linux-qcom (7.0.11-9) unstable; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 13 Nov 2026 08:06:22 +0000
+
 linux-qcom (7.0.11-8) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
